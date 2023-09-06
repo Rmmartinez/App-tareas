@@ -17,9 +17,6 @@ export default function SharedTodoModalContent({
     const response = await fetch(
       `http://192.168.0.6:8080/todos/shared_todos/${id}`,
       {
-        headers: {
-          "x-api-key": "abcdef123456",
-        },
         method: "GET",
       }
     );
